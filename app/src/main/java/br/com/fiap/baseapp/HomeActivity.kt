@@ -19,12 +19,12 @@ class HomeActivity : AppCompatActivity() {
 
         val username = intent.getStringExtra("username")
         val tvUsername = findViewById<TextView>(R.id.tv_username)
-        tvUsername.setText(username)
+        tvUsername.text = username
 
-/*        val btnEstados = findViewById<Button>(R.id.btn_estados)
-        btnEstados.setOnClickListener {
-            irEstados()
-        }*/
+        val btnTreinamentos = findViewById<Button>(R.id.btn_treinamentos)
+        btnTreinamentos.setOnClickListener {
+            irTreinamentos()
+        }
 
         val btnUsuarios = findViewById<Button>(R.id.btn_usuarios)
         btnUsuarios.setOnClickListener {
@@ -39,12 +39,12 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    fun irEstados() {
-        val intent = Intent(this, EstadosActivity::class.java)
+    private fun irTreinamentos() {
+        val intent = Intent(this, TreinamentosActivity::class.java)
         startActivity(intent)
     }
 
-    fun listarUsuarios() {
+    private fun listarUsuarios() {
         val intent = Intent(this, UsuariosActivity::class.java)
         startActivity(intent)
     }
