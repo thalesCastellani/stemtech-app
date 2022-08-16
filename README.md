@@ -7,25 +7,21 @@ Fluxo de funcionamento do aplicativo:
 
 ![image](https://user-images.githubusercontent.com/62717114/184757884-e7995ff1-d513-4453-bd4f-ef5a7c01a51a.png)
 
-1 - Clicar no botão entrar (aqui está hard coded a logica para o Username ser admin e a Senha 123, caso entre os valores default, consegue logar no aplicativo, caso deixe algum input em branco ou entre com algum valor errado, receberá uma mensagem dizendo: "Username ou senha inválidos"
+1 - Clicar no botão ENTRAR (aqui está hard coded a logica para o Username ser admin e a Senha 123, caso entre os valores default, consegue logar no aplicativo, caso deixe algum input em branco ou entre com algum valor errado, receberá uma mensagem dizendo: "Username ou senha inválidos"
 
 2 - Caso não tenha cadastro, clicar em Cadastrar onde será direcionado para a tela de cadastro
 
-3 - Clicar em Esqueceu sua senha? Esta tela ainda está em construção, onde será mostrado um pop-up informando
+3 - Clicar em Esqueceu sua senha? Esta tela ainda está em construção, onde será mostrado um pop-up com essa info
 
 Caso o usuário clique em Cadastrar
 
-2a) Tela de cadastro: 
+2a) Vai para a tela de cadastro: 
 
 ![image](https://user-images.githubusercontent.com/62717114/184969888-fdb00f2b-37ff-40e0-a11f-3d78feec3e63.png)
 
 1 - Nesta tela o usuário tem a opção de: Preencher as informações de cadastro e clicar no botão cadastrar, o aplicativo está configurado com o banco de dados SQLite, desta forma, ao clicar em Cadastrar, os dados do usuário serão salvos no banco de dados e ele será redirecionado para a tela Home
-
-Caso o usuário clique no botão ENTRAR
-
-3a) Também é redirecionado para a tela Home: 
   
-4a) Tela Home: Nesta tela o usuário tem 3 opções
+3a) Vai para a tela Home: Nesta tela o usuário tem 3 opções (OBS: Caso o usuário clique no botão ENTRAR da tela Main com as credenciais corretas também é redirecionado para a tela Home: 
 
 ![image](https://user-images.githubusercontent.com/62717114/184758519-f076fb3f-e19f-48d9-905c-155ba3691148.png)
 
