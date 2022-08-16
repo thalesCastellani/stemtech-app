@@ -5,12 +5,18 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 
 class CadastroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
+
+        val actionBar: ActionBar? = supportActionBar
+        actionBar.let {
+            actionBar?.setTitle("Cadastro")
+        }
 
         val btnCadastrar = findViewById<Button>(R.id.btn_cadastrar)
         btnCadastrar.setOnClickListener {
