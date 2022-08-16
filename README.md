@@ -20,8 +20,12 @@ Caso o usuário clique em Cadastrar
 ![image](https://user-images.githubusercontent.com/62717114/184969888-fdb00f2b-37ff-40e0-a11f-3d78feec3e63.png)
 
 1 - Nesta tela o usuário tem a opção de: Preencher as informações de cadastro e clicar no botão cadastrar, o aplicativo está configurado com o banco de dados SQLite, desta forma, ao clicar em Cadastrar, os dados do usuário serão salvos no banco de dados e ele será redirecionado para a tela Home
+
+Caso o usuário clique no botão ENTRAR
+
+3a) Também é redirecionado para a tela Home: 
   
-3a) Tela Home: Nesta tela o usuário tem 3 opções
+4a) Tela Home: Nesta tela o usuário tem 3 opções
 
 ![image](https://user-images.githubusercontent.com/62717114/184758519-f076fb3f-e19f-48d9-905c-155ba3691148.png)
 
@@ -33,14 +37,21 @@ Caso o usuário clique em Cadastrar
 
 Caso o usuário clique no botão de LISTAR USUARIOS
 
-4a) Tela que mostra os dados do usuário:
+5a) Tela que mostra os dados do usuário:
 
 ![image](https://user-images.githubusercontent.com/62717114/184970717-33bdb630-dfc2-4051-b94e-fe83b46a736b.png)
   
 Caso o usuário clique no botão de treinamentos
 
-5a) Tela de treinamentos:
+6a) Tela de treinamentos:
 
 ![image](https://user-images.githubusercontent.com/62717114/184758716-a8c8128a-0df7-486a-8064-f98477df52ff.png)
 
 1 - Ao clicar no botão de treinamentos, o usuário será levado para a tela do app onde consta a integraçao com o VideoPlayer, dessa forma, consegue dar play no vídeo e pausá-lo também, tendo acesso ao conteúdo.
+
+Caso o usuário clique no botão de SAIR
+
+7a) Retorna para a tela de Login (MainActivity):
+
+![image](https://user-images.githubusercontent.com/62717114/184971702-4df297ff-87a0-429c-bd3f-1a997fd024cf.png)
+
