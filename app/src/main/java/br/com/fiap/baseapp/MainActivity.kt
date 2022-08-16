@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CadastroActivity::class.java)
 
             startActivity(intent)
-            finish() // matando a tela de login para nao poder voltar para ela
+            finish()
         }
 
         val tvEsqueceu = findViewById<TextView>(R.id.tv_esqueceu)
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("username", etUsername.text.toString())
 
                 startActivity(intent)
-                finish() // matando a tela de login para nao poder voltar para ela
+                finish()
             }
         }
     }
