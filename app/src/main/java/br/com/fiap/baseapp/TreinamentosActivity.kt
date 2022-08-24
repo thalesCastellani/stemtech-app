@@ -34,7 +34,7 @@ class TreinamentosActivity : AppCompatActivity() {
         val mediaController = MediaController(this)
         mediaController.setAnchorView(vv)
 
-        val uriPath = "https://archive.org/download/WildlifeSampleVideo/Wildlife.mp4"
+        val uriPath = "android.resource://" + packageName + "/" + R.raw.stemvideo
 
         uri = Uri.parse(uriPath)
 
