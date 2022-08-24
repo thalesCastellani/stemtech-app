@@ -41,7 +41,7 @@ Caso o usuário clique no botão de treinamentos
 
 6a) Tela de treinamentos:
 
-![image](https://user-images.githubusercontent.com/62717114/184758716-a8c8128a-0df7-486a-8064-f98477df52ff.png)
+![image](https://user-images.githubusercontent.com/62717114/186296208-52916d66-83c1-4f04-bc34-dec3c5e3fc8b.png)
 
 1 - Ao clicar no botão de treinamentos, o usuário será levado para a tela do app onde consta a integraçao com o VideoPlayer, dessa forma, consegue dar play no vídeo e pausá-lo também, tendo acesso ao conteúdo.
 
