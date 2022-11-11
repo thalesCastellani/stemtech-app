@@ -31,6 +31,11 @@ class HomeActivity : AppCompatActivity() {
             listarUsuarios()
         }
 
+        val btnCursos = findViewById<Button>(R.id.btn_cursos)
+        btnCursos.setOnClickListener {
+            listarCursos()
+        }
+
         val btnSair = findViewById<Button>(R.id.btn_sair)
         btnSair.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -46,6 +51,11 @@ class HomeActivity : AppCompatActivity() {
 
     private fun listarUsuarios() {
         val intent = Intent(this, UsuariosActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun listarCursos() {
+        val intent = Intent(this, CursosActivity::class.java)
         startActivity(intent)
     }
 }
