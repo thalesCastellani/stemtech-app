@@ -38,11 +38,11 @@ class CursosActivity : AppCompatActivity() {
                 Log.e("Response: ", response.toString())
 
                 for (i in 0 until response.length()) {
-                    val jsonobject = response.getJSONObject(i)
-                    val id = jsonobject.getInt("id")
-                    val nome = jsonobject.getString("nome")
-                    val formacao = jsonobject.getString("formacao")
-                    val categoria = jsonobject.getString("categoria")
+                    val jsonObject = response.getJSONObject(i)
+                    val id = jsonObject.getInt("id")
+                    val nome = jsonObject.getString("nome")
+                    val formacao = jsonObject.getString("formacao")
+                    val categoria = jsonObject.getString("categoria")
 
                     txvIdCurso.text = id.toString()
                     txvNomeCurso.text = nome
