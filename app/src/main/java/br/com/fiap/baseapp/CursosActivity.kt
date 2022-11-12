@@ -6,9 +6,9 @@ import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
+
 
 class CursosActivity : AppCompatActivity() {
 
@@ -26,59 +26,34 @@ class CursosActivity : AppCompatActivity() {
         val txvFormacaoCurso = findViewById<TextView>(R.id.tv_formacao_curso)
         val txvCategoriaCurso = findViewById<TextView>(R.id.tv_categoria_curso)
 
-        var id = ""
-        var nome = ""
-        var formacao = ""
-        var categoria = ""
-
-        val BASE_URL = "https://192.168.0.46:8081/curso"
+        val baseUrl = "http://192.168.0.46:8081/curso"
 
         val requestQueue = Volley.newRequestQueue(this)
 
-        val objectRequest = JsonObjectRequest(
+        val objectRequest = JsonArrayRequest(
             Request.Method.GET,
-            BASE_URL,
+            baseUrl,
             null,
-            Response.Listener { response ->
+            { response ->
                 Log.e("Response: ", response.toString())
 
-                id = (response["id"] as Number).toString()
-                nome = response["nome"] as String
-                formacao = response["formacao"] as String
-                categoria = response["categoria"] as String
+                for (i in 0 until response.length()) {
+                    val jsonobject = response.getJSONObject(i)
+                    val id = jsonobject.getInt("id")
+                    val nome = jsonobject.getString("nome")
+                    val formacao = jsonobject.getString("formacao")
+                    val categoria = jsonobject.getString("categoria")
+
+                    txvIdCurso.text = id.toString()
+                    txvNomeCurso.text = nome
+                    txvFormacaoCurso.text = formacao
+                    txvCategoriaCurso.text = categoria
+                }
             },
-            Response.ErrorListener { error ->
+            { error ->
                 Log.e("Error: ", error.toString())
             }
-
-
-/*            {
-                Log.e("Rest response", it.toString())
-
-                id = (it["id"] as Number).toString()
-                nome = it["nome"] as String
-                formacao = it["formacao"] as String
-                categoria = it["categoria"] as String
-            },
-            {
-                Log.e("Rest response", it.toString())
-            }*/
         )
-
-/*        val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, BASE_URL, null,
-            Response.Listener { response ->
-                Log.e("Response: ", response.toString()))
-            },
-            Response.ErrorListener { error ->
-                Log.e("Error: ", it.toString()))
-            }
-        )*/
-
         requestQueue.add(objectRequest)
-
-        txvIdCurso.text = id
-        txvNomeCurso.text = nome
-        txvFormacaoCurso.text = formacao
-        txvCategoriaCurso.text = categoria
     }
 }
