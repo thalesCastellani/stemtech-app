@@ -9,22 +9,21 @@ import com.android.volley.Request
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 
-
 class CursosActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cursos)
+        setContentView(R.layout.item_curso)
 
         val actionBar: ActionBar? = supportActionBar
         actionBar.let {
             actionBar?.setTitle("Cursos")
         }
 
-        val txvIdCurso = findViewById<TextView>(R.id.tv_id_curso)
-        val txvNomeCurso = findViewById<TextView>(R.id.tv_nome_curso)
-        val txvFormacaoCurso = findViewById<TextView>(R.id.tv_formacao_curso)
-        val txvCategoriaCurso = findViewById<TextView>(R.id.tv_categoria_curso)
+        val txvIdCurso = findViewById<TextView>(R.id.item_curso_id)
+        val txvNomeCurso = findViewById<TextView>(R.id.item_curso_nome)
+        val txvFormacaoCurso = findViewById<TextView>(R.id.item_curso_formacao)
+        val txvCategoriaCurso = findViewById<TextView>(R.id.item_curso_categoria)
 
         val baseUrl = "http://192.168.0.46:8081/curso"
 

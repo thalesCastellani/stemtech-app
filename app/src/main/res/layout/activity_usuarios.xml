@@ -13,33 +13,33 @@
         android:orientation="vertical"
         android:padding="36dp">
 
-    <TextView
-        android:id="@+id/tv_nome_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="Nome: "/>
+        <TextView
+            android:id="@+id/tv_nome_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome: "
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tv_email_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="E-mail: "/>
+        <TextView
+            android:id="@+id/tv_email_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail: "
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tv_cpf_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="CPF: "/>
+        <TextView
+            android:id="@+id/tv_cpf_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF: "
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tv_telefone_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:text="Telefone: "/>
+        <TextView
+            android:id="@+id/tv_telefone_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone: "
+            android:textSize="24sp" />
     </LinearLayout>
 
 </LinearLayout>
