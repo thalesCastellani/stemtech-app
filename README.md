@@ -51,3 +51,16 @@ Caso o usuário clique no botão de SAIR
 
 ![image](https://user-images.githubusercontent.com/62717114/184971702-4df297ff-87a0-429c-bd3f-1a997fd024cf.png)
 
+--------------------------------------------------------------------------------------------------------------
+
+Nova feature:
+
+Com o aplicativo Web rodando localmente na porta 8081, basta clicar no botão LISTAR CURSOS:
+
+![image](https://user-images.githubusercontent.com/62717114/202864978-51801534-5b2f-484d-bc17-5e855de9918f.png)
+
+Feito isso, o resultado esperado é: 
+
+![image](https://user-images.githubusercontent.com/62717114/202865013-10785423-c9f0-4110-a49c-b74062dfbeea.png)
+
+
